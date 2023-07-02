@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+:root {
+    --fonte-principal: 'Poppins', sans-serif;
+    --cor-fundo: black;
+    --cor-fonte: white;
+
+    --icone-modo-luz: url('assets/sun-regular.svg');
+    --icone-como-jogar: url('assets/circle-question-regular.svg');
+}
+
+body {
+    font-family: var(--fonte-principal);
+    background-color: var(--cor-fundo);
+    color: var(--cor-fonte);
+    min-height: 100vh;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    margin: 0;
+
+    transition: 1s linear;
+}
+
+h1 {
+    font-size: 5em;
+}
+
+h3 {
+    font-size: 2em;
+    margin: 40px 0;
+}
+
+.mensagem {
+    font-size: 1.5em;
+    margin-top: 20px;
+}
+
+.box {
+    border: 2px solid var(--cor-fonte);
+    display: inline-block;
+    font-size: 3em;
+    padding: 20px;
+    margin: 15px;
+}
+
+.nav {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+}
+
+.nav-icones {
+    display: flex;
+    gap: 20px;
+    flex-direction: row-reverse;
+}
+
+#btn-tema, #btn-sobre {
+    display: none;
+}
+
+.mudar-tema {
+    -webkit-mask: var(--icone-modo-luz) no-repeat center;
+    mask: var(--icone-modo-luz) no-repeat center;
+    background-color: var(--cor-fonte);
+    padding: 17px;
+    cursor: pointer;
+}
+
+.como-jogar {
+    -webkit-mask: var(--icone-como-jogar) no-repeat center;
+    mask: var(--icone-como-jogar) no-repeat center;
+    background-color: var(--cor-fonte);
+    padding: 17px;
+    cursor: pointer;
+}
+
+.dark-mode {
+    --cor-fundo: white;
+    --cor-fonte: black;
+
+    --icone-modo-luz: url('assets/moon-regular.svg');
+}
