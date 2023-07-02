@@ -40,9 +40,39 @@
         </span>
         <div>O número secreto é maior <i class="fa-solid fa-arrow-up-long"></i></div>
     </div>
-    
-    <script src="main.js"></script>
+
+    <div id="modal-como-jogar" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-titulo">Número Secreto:</h2>
+            <p class="modal-sobre">O número secreto é um jogo que por meio do reconhecimento de voz te desafia a descobrir um número entre os limites configurados, pode ser jogado também com várias pessoas</p>
+            <p class="modal-como-jogar--subtitulo">Como Jogar:</p>
+            <ul class="modal-como-jogar--regras">
+                <li>Fale um número entre os limites configurados</li>
+                <li>Se o número secreto for maior o jogo indicará com uma frase e o ícone <i class="fa-solid fa-arrow-up-long"></i></li>
+                <li>Se o número secreto for menor o jogo indicará com uma frase e o ícone <i class="fa-solid fa-arrow-down-long"></i></li>
+            </ul>
+        </div>
+    </div>
+
+    <div id="modal-configurar" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2 class="modal-titulo">Informe os limites:</h2>
+            <p class="modal-sobre">*A diferença mínima entre o limite mínimo e o limite máximo é 10</p>
+            <form class="form-limites" action="submit">
+                <label for="limite-minimo">Limite mínimo</label>
+                <input class="modal-numero" type="number" id="limite-minimo" min="1">
+                <label for="limite-maximo">Limite máximo</label>
+                <input class="modal-numero" type="number" id="limite-maximo">
+                <input type="button" id="confirmar-limites" title="confirmar">
+                <label class="modal-limites--confirmar" for="confirmar-limites">Configurar Limites</label>
+            </form>
+        </div>
+    </div>
+        
     <script src="app/sotearNumero.js"></script>
+    <script src="main.js"></script>
     <script src="app/reconhecimentoDeVoz.js"></script>
 </body>
 </html>

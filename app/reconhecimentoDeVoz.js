@@ -1,7 +1,5 @@
 const elemChute = document.getElementById('chute');
 
-console.log(elemChute);
-
 window.SpeechRecognition = window.SpeechRecognition || window.webkitSpeechRecognition;
 
 const recognition = new SpeechRecognition();

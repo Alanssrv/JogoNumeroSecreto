@@ -1,0 +1,85 @@
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgb(0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.7);
+}
+
+.modal-content {
+    background-color: var(--cor-fundo);
+    margin: 5% auto;
+    padding: 20px;
+    border: 1px solid var(--cor-fonte);
+    width: 50%;
+}
+
+.modal-titulo {
+    font-size: 3em;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.modal-sobre { 
+    font-size: 1.2em;
+}
+
+.modal-como-jogar--subtitulo {
+    font-size: 2em;
+    margin: 10px;
+}
+
+.modal-como-jogar--regras > li{ 
+    font-size: 1.2em;
+    list-style-type: none;
+    margin-top: 5px;
+}
+
+.close {
+    color: var(--cor-fonte);
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  cursor: pointer;
+}
+
+.form-limites {
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.form-limites > * {
+    margin: 7px 0;
+}
+
+.modal-numero {
+    font-family: var(--fonte-principal);
+    font-size: 1em;
+    border: 1px solid var(--cor-fonte);
+    color: var(--cor-fonte);
+    padding: 5px 10px;
+    background-color: transparent;
+}
+
+.modal-limites--confirmar {
+    border: 1px solid var(--cor-fonte);
+    font-size: 1em;
+    padding: 10px 30px;
+}
+
+.modal-limites--confirmar:hover {
+    color: var(--cor-fundo);
+    background-color: var(--cor-fonte);
+    border: 1px solid var(--cor-fundo);
+}
