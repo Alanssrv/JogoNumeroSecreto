@@ -7,6 +7,7 @@
 
     --icone-modo-luz: url('assets/sun-regular.svg');
     --icone-como-jogar: url('assets/circle-question-regular.svg');
+    --icone-configuracoes: url('assets/gear-solid.svg');
 }
 
 body {
@@ -47,6 +48,10 @@ h3 {
     margin: 15px;
 }
 
+.hidden {
+    display: none;
+}
+
 .nav {
     position: absolute;
     top: 5%;
@@ -59,7 +64,7 @@ h3 {
     flex-direction: row-reverse;
 }
 
-#btn-tema, #btn-sobre {
+#btn-tema, #btn-sobre, #btn-config {
     display: none;
 }
 
@@ -74,6 +79,14 @@ h3 {
 .como-jogar {
     -webkit-mask: var(--icone-como-jogar) no-repeat center;
     mask: var(--icone-como-jogar) no-repeat center;
+    background-color: var(--cor-fonte);
+    padding: 17px;
+    cursor: pointer;
+}
+
+.configuracoes {
+    -webkit-mask: var(--icone-configuracoes) no-repeat center;
+    mask: var(--icone-configuracoes) no-repeat center;
     background-color: var(--cor-fonte);
     padding: 17px;
     cursor: pointer;

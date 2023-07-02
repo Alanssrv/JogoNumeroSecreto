@@ -1,12 +1,10 @@
-const menorValor = 1800;
-const maiorValor = 1900;
+const menorValor = 1;
+const maiorValor = 1000;
 const numeroSecreto = gerarNumeroSecreto();
 
 function gerarNumeroSecreto() {
     return parseInt(Math.random() * (maiorValor - menorValor + 1) + menorValor);
 }
-
-console.log(numeroSecreto);
 
 const elemMenorValor = document.getElementById('menor-valor');
 elemMenorValor.innerHTML = menorValor;

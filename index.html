@@ -20,6 +20,10 @@
                 <input title="como-jogar" id="btn-sobre" type="button">
                 <label for="btn-sobre" class="como-jogar"></label>
             </div>
+            <div>
+                <input title="configuracoes" id="btn-config" type="button">
+                <label for="btn-config" class="configuracoes"></label>
+            </div>
         </div>
     </div>
 
@@ -29,7 +33,7 @@
         O número secreto está entre <span id="menor-valor">0</span> e <span id="maior-valor">100</span>
     </h3>
 
-    <div id="chute" class="mensagem">
+    <div id="chute" class="mensagem hidden">
         <div>Você disse</div>
         <span class="box">
             20
@@ -39,5 +43,6 @@
     
     <script src="main.js"></script>
     <script src="app/sotearNumero.js"></script>
+    <script src="app/reconhecimentoDeVoz.js"></script>
 </body>
 </html>
