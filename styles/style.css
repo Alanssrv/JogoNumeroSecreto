@@ -6,9 +6,9 @@
     --cor-fundo: black;
     --cor-fonte: white;
 
-    --icone-modo-luz: url('assets/sun-regular.svg');
-    --icone-como-jogar: url('assets/circle-question-regular.svg');
-    --icone-configuracoes: url('assets/gear-solid.svg');
+    --icone-modo-luz: url('../assets/sun-regular.svg');
+    --icone-como-jogar: url('../assets/circle-question-regular.svg');
+    --icone-configuracoes: url('../assets/gear-solid.svg');
 }
 
 body {
@@ -31,6 +31,10 @@ h1 {
     font-size: 5em;
 }
 
+h2 {
+    font-size: 4em;
+}
+
 h3 {
     font-size: 2em;
     margin: 40px 0;
@@ -49,10 +53,6 @@ h3 {
     margin: 15px;
 }
 
-.hidden {
-    display: none;
-}
-
 .nav {
     position: absolute;
     top: 5%;
@@ -63,6 +63,23 @@ h3 {
     display: flex;
     gap: 20px;
     flex-direction: row-reverse;
+}
+
+.btnJogar {
+    font-family: var(--fonte-principal);
+    font-size: 1.2em;
+    padding: 10px;
+    color: var(--cor-fonte);
+    background-color: transparent;
+    border: 1px solid var(--cor-fonte);
+}
+
+.btnJogar:hover,
+.btnJogar:focus {
+  cursor: pointer;
+  color: var(--cor-fundo);
+  background-color: var(--cor-fonte);
+  border: 1px solid var(--cor-fundo);
 }
 
 #btn-tema, #btn-sobre, #btn-config, #confirmar-limites {
@@ -97,5 +114,5 @@ h3 {
     --cor-fundo: white;
     --cor-fonte: black;
 
-    --icone-modo-luz: url('assets/moon-regular.svg');
+    --icone-modo-luz: url('../assets/moon-regular.svg');
 }

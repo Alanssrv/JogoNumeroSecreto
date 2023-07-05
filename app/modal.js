@@ -29,8 +29,8 @@ const configValorMinimo = document.getElementById('limite-minimo');
 const configValorMaximo = document.getElementById('limite-maximo');
 
 btnConfigurar.addEventListener('click', () => {
-    configValorMinimo.value = document.getElementById('menor-valor').innerHTML;
-    configValorMaximo.value = document.getElementById('maior-valor').innerHTML;
+    configValorMinimo.value = menorValor;
+    configValorMaximo.value = maiorValor;
     modalConfigurar.style.display = 'block';
 });
 
@@ -39,8 +39,7 @@ spanConfigurar.addEventListener('click', () => {
 });
 
 btnConfirmar.addEventListener('click', () => {
-    document.getElementById('menor-valor').innerHTML = configValorMinimo.value;
-    document.getElementById('maior-valor').innerHTML = configValorMaximo.value;
+    atualizarValores(configValorMinimo.value, configValorMaximo.value);
     modalConfigurar.style.display = "none";
 });
 

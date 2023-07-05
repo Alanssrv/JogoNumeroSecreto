@@ -11,9 +11,14 @@ recognition.addEventListener('result', onSpeak);
 function onSpeak(e) {
     const chute = e.results[0][0].transcript;
     exibeChute(chute);
+    verificarChuteValido(chute);
 }
 
 function exibeChute(chute) {
-    elemChute.classList.remove('hidden');
-    elemChute.children[1].innerHTML = chute;
+    elemChute.innerHTML = `
+        <div>Você disse</div>
+        <span class="box">${chute}</span>
+    `;
 }
+
+recognition.addEventListener('end', () => recognition.start());
