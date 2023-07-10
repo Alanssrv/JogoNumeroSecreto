@@ -1,4 +1,11 @@
-document.querySelector('#btn-tema').addEventListener('click', () => {
+var darkmode = localStorage.getItem('darkmode') === 'true';
+
+if (localStorage.getItem('darkmode') === 'true')
+    document.querySelector('body').classList.add('dark-mode');
+
+document.querySelector('#btn-tema').addEventListener('click', (e) => {
+    darkmode = !darkmode;
+    localStorage.setItem('darkmode', darkmode);
     document.querySelector('body').classList.toggle('dark-mode');
 });
 
